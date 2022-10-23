@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Cours Créez une application React complète
+
+https://openclassrooms.com/fr/courses/7150606-creez-une-application-react-complete
+
 ## Available Scripts
 
 In the project directory, you can run:
