@@ -35,8 +35,8 @@ ReactDOM.render(
                      <Error />
                   </Route>
                </Switch>
-               <Footer />
             </SurveyProvider>
+            <Footer />
          </ThemeProvider>
       </Router>
    </React.StrictMode>,
