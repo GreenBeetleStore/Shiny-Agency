@@ -19,8 +19,8 @@ export const SurveyContext = createContext()
 
 export const SurveyProvider = ({ children }) => {
    const [answers, setAnswers] = useState({})
-   const saveAnswers = (newAnswer) => {
-      setAnswers({ ...answers, ...newAnswer })
+   const saveAnswers = (newAnswers) => {
+      setAnswers({ ...answers, ...newAnswers })
    }
 
    return (
