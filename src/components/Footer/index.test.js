@@ -3,15 +3,15 @@ import { render, screen, fireEvent } from '@testing-library/react'
 import { ThemeProvider } from '../../utils/context'
 
 describe('Footer', () => {
-   test('Devrait rendre sans planter', async () => {
+   it('Devrait rendre sans planter', async () => {
       render(
-        <ThemeProvider>
-          <Footer />
-        </ThemeProvider>
+         <ThemeProvider>
+            <Footer />
+         </ThemeProvider>
       )
-    })
+   })
 
-   test('Doit changer theme', async () => {
+   it('Doit changer theme', async () => {
       render(
          <ThemeProvider>
             <Footer />

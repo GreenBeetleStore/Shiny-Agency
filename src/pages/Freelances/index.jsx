@@ -43,7 +43,7 @@ function Freelances() {
    const freelancersList = data?.freelancersList
 
    if (error) {
-      return <span>Il y a un problème</span>
+      return <span data-testid="error">{error}</span>
    }
 
    return (
@@ -54,7 +54,7 @@ function Freelances() {
          </PageSubtitle>
          {isLoading ? (
             <LoaderWrapper>
-               <Loader theme={theme} />
+               <Loader theme={theme} data-testid="loader" />
             </LoaderWrapper>
          ) : (
             <CardsContainer>

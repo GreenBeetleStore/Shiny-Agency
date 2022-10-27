@@ -85,9 +85,9 @@ function Survey() {
       <SurveyContainer>
          <QuestionTitle theme={theme}>Question {questionNumber}</QuestionTitle>
          {isLoading ? (
-            <Loader />
+            <Loader data-testid="loader" />
          ) : (
-            <QuestionContent theme={theme}>
+            <QuestionContent theme={theme} data-testid="question-content">
                {surveyData && surveyData[questionNumber]}
             </QuestionContent>
          )}
