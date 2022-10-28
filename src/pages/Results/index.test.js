@@ -4,23 +4,23 @@ import { setupServer } from 'msw/node'
 import { waitForElementToBeRemoved, screen } from '@testing-library/react'
 import { render } from '../../utils/test'
 
-describe('The getJobTitle function', () => {
-   it('should add a comma to a word', () => {
+describe('La fonction getJobTitle', () => {
+   it('devrait ajouter une virgule', () => {
       const expectedState = 'item2,'
       expect(formatJobList('item2', 3, 1)).toEqual(expectedState)
    })
-   it('should not add a comma to the last element of the list', () => {
+   it('ne doit pas ajouter de virgule au dernier élément de la liste', () => {
       const expectedState = 'item3'
       expect(formatJobList('item3', 3, 2)).toEqual(expectedState)
    })
 })
 
-describe('The formatQueryParams function', () => {
-   it('should use the right format for param', () => {
+describe('La fonction formatQueryParams', () => {
+   it('devrait utiliser le bon format pour param', () => {
       const expectedState = 'a1=answer1'
       expect(formatQueryParams({ 1: 'answer1' })).toEqual(expectedState)
    })
-   it('should concatenate params with an &', () => {
+   it('doit concaténer params avec un &', () => {
       const expectedState = 'a1=answer1&a2=answer2'
       expect(formatQueryParams({ 1: 'answer1', 2: 'answer2' })).toEqual(
          expectedState
@@ -48,8 +48,8 @@ beforeAll(() => server.listen())
 afterEach(() => server.resetHandlers())
 afterAll(() => server.close())
 
-describe('The Results component', () => {
-   test('should display the results after the data is loaded', async () => {
+describe('Le composant Résultats', () => {
+   test('devrait afficher les résultats après le chargement des données', async () => {
       render(<Results />)
       await waitForElementToBeRemoved(() => screen.getByTestId('loader'))
       const jobTitleElements = screen.getAllByTestId('job-title')

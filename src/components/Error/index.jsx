@@ -28,6 +28,7 @@ const Illustration = styled.img`
 
 function Error() {
    const { theme } = useTheme()
+   
    return (
       <ErrorWrapper theme={theme}>
          <ErrorTitle theme={theme}>Oups...</ErrorTitle>

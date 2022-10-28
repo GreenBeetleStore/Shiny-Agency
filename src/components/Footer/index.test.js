@@ -11,7 +11,7 @@ describe('Footer', () => {
       )
    })
 
-   it('Doit changer theme', async () => {
+   it('Doit changer le theme', async () => {
       render(
          <ThemeProvider>
             <Footer />

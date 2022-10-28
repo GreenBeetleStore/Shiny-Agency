@@ -28,7 +28,7 @@ beforeAll(() => server.listen())
 afterEach(() => server.resetHandlers())
 afterAll(() => server.close())
 
-it('Should display freelancers names after loader is removed', async () => {
+it('Devrait afficher les noms des freelancers après la suppression du loader', async () => {
    render(<Freelances />)
 
    await waitForElementToBeRemoved(() => screen.getByTestId('loader'))
