@@ -59,13 +59,13 @@ function Freelances() {
          ) : (
             <CardsContainer>
                {freelancersList?.map((profile, index) => (
-                  <Card
-                     key={`${profile.name}-${index}`}
-                     label={profile.job}
-                     title={profile.name}
-                     picture={profile.picture}
-                     theme={theme}
-                  />
+                     <Card
+                        key={`${profile.name}-${index}`}
+                        label={profile.job}
+                        title={profile.name}
+                        picture={profile.picture}
+                        theme={theme}
+                     />
                ))}
             </CardsContainer>
          )}

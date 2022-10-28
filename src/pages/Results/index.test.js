@@ -49,7 +49,7 @@ afterEach(() => server.resetHandlers())
 afterAll(() => server.close())
 
 describe('Le composant Résultats', () => {
-   test('devrait afficher les résultats après le chargement des données', async () => {
+   it('devrait afficher les résultats après le chargement des données', async () => {
       render(<Results />)
       await waitForElementToBeRemoved(() => screen.getByTestId('loader'))
       const jobTitleElements = screen.getAllByTestId('job-title')

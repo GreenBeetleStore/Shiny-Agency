@@ -15,6 +15,7 @@ const StyledGlobalStyle = createGlobalStyle`
 
 function GlobalStyle() {
    const { theme } = useTheme()
+   
    return <StyledGlobalStyle isDarkMode={theme === 'dark'} />
 }
 

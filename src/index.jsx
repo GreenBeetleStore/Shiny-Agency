@@ -31,7 +31,7 @@ ReactDOM.render(
                   <Route path="/freelances">
                      <Freelances />
                   </Route>
-                  <Route>
+                  <Route path="*">
                      <Error />
                   </Route>
                </Switch>
